@@ -48,7 +48,11 @@ layout: default
       {%- endif -%}
 
       {%- if project.link -%}
-        <a href="{{ project.link }}" target="_blank" rel="noopener">View Project &rarr;</a>
+        {%- if project.link contains 'http' -%}
+          <a href="{{ project.link }}" target="_blank" rel="noopener">View on App Store &rarr;</a>
+        {%- else -%}
+          <a href="{{ project.link | relative_url }}">View Project &rarr;</a>
+        {%- endif -%}
       {%- endif -%}
     </div>
 

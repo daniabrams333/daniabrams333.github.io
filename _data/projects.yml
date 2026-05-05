@@ -15,7 +15,7 @@
     - Met Apple CEO Tim Cook
     - Attracted interest from higher education institutions
   screenshot: convo-jo-screenshot.png
-  link:
+  link: https://apps.apple.com/us/app/convojo/id6746221755
 
 - title: The Academy App
   category: iOS Application Development
@@ -33,7 +33,7 @@
     - Database migration from CloudKit to FileMaker.
     - To be used daily across the Apple Developer Academy cohort
   screenshot: academy-app-screenshot.png
-  link:
+  link: /projects/academy-app
 
 - title: LockIn iOS App
   category: iOS Application Development
@@ -49,4 +49,4 @@
     - Built end-to-end as a collaborative project
     - Implemented MVVM Architecture.
   screenshot: lockin-app-screenshot.png
-  link:
+  link: /projects/lockin
