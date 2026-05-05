@@ -15,10 +15,10 @@ accomplishments:
   - Implemented MVVM Architecture
 github: https://github.com/daniabrams333/LockIn
 screenshots:
-  - file: lockin-app-screenshot.png
-    caption: Main screen
   - file: lockin-home.png
     caption: Home
   - file: lockin-stats.png
     caption: Stats
+  - file: lockin-badges.png
+    caption: Badges
 ---
