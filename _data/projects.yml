@@ -1,0 +1,52 @@
+- title: ConvoJo iOS App
+  category: iOS Application Development
+  description: >
+    An app designed to help young professionals improve their conversational
+    skills and communication abilities. Published on the App Store.
+  tech:
+    - SwiftUI
+    - Swift Data
+    - JSON
+  role: >
+    Lead coder responsible for codebase management, GitHub code reviews,
+    Swift Datastore creation, and app navigation.
+  accomplishments:
+    - Selected to represent our cohort in the Apple VIP walkthrough
+    - Met Apple CEO Tim Cook
+    - Attracted interest from higher education institutions
+  screenshot: convo-jo-screenshot.png
+  link:
+
+- title: The Academy App
+  category: iOS Application Development
+  description: >
+    An attendance tracking app built for the Apple Developer Academy,
+    streamlining daily check-ins for students and staff.
+  tech:
+    - Swift
+    - UIKit
+    - CoreData
+  role: >
+    Developer responsible for UI implementation, data persistence,
+    and attendance logic.
+  accomplishments:
+    - Deployed and used daily across the Apple Developer Academy cohort
+  screenshot: academy-app-screenshot.png
+  link:
+
+- title: LockIn iOS App
+  category: iOS Application Development
+  description: >
+    A Pomodoro-style productivity app built with gamification elements
+    to help users stay focused and build consistent work habits.
+  tech:
+    - Swift
+    - SwiftUI
+  role: >
+    Solo developer responsible for design, development, and gamification
+    system architecture.
+  accomplishments:
+    - Built end-to-end as an independent project
+    - Integrated custom reward and streak tracking system
+  screenshot: lockin-app-screenshot.png
+  link:
