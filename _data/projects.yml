@@ -24,13 +24,14 @@
     streamlining daily check-ins for students and staff.
   tech:
     - Swift
-    - UIKit
-    - CoreData
+    - RESTful API
+    - FileMaker
   role: >
-    Developer responsible for UI implementation, data persistence,
+    Developer responsible for Network calls, data persistence,
     and attendance logic.
   accomplishments:
-    - Deployed and used daily across the Apple Developer Academy cohort
+    - Database migration from CloudKit to FileMaker.
+    - To be used daily across the Apple Developer Academy cohort
   screenshot: academy-app-screenshot.png
   link:
 
@@ -43,10 +44,9 @@
     - Swift
     - SwiftUI
   role: >
-    Solo developer responsible for design, development, and gamification
-    system architecture.
+    Developer responsible for SwiftCharts implementation and app architecture.
   accomplishments:
-    - Built end-to-end as an independent project
-    - Integrated custom reward and streak tracking system
+    - Built end-to-end as a collaborative project
+    - Implemented MVVM Architecture.
   screenshot: lockin-app-screenshot.png
   link:
