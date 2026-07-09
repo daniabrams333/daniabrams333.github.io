@@ -1,0 +1,326 @@
+---
+---
+@charset "utf-8";
+
+@import "minima";
+
+// === GLOBAL TYPOGRAPHY ===
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+// === HEADER / NAV ===
+.site-header {
+  border-top: none;
+  border-bottom: 1px solid #ebebeb;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  min-height: auto;
+}
+
+.site-title {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1;
+
+  &,
+  &:visited {
+    color: #0a0a0a;
+  }
+}
+
+.site-nav .page-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+
+  &:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+
+  &:hover {
+    color: #0a0a0a;
+  }
+}
+
+// === HOME PAGE ===
+.page-heading {
+  font-size: 3.25rem;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  margin-top: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.home > p {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.65;
+  max-width: 520px;
+  margin-bottom: 3rem;
+}
+
+.home hr,
+.ux-page hr {
+  border: none;
+  border-top: 1px solid #ebebeb;
+  margin: 2.5rem 0;
+}
+
+.home > h2,
+.ux-page > h2 {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #999;
+  margin-bottom: 2.25rem;
+}
+
+// === PROJECT CARDS ===
+.project-card {
+  display: flex;
+  gap: 2.5rem;
+  margin-bottom: 3.5rem;
+  align-items: flex-start;
+}
+
+.project-screenshot {
+  flex: 0 0 180px;
+}
+
+.project-screenshot img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ebebeb;
+  display: block;
+}
+
+.screenshot-placeholder {
+  width: 100%;
+  height: 130px;
+  background: #f8f8f8;
+  border: 1px dashed #ddd;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  font-size: 12px;
+}
+
+.project-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.project-category {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #999;
+  margin-bottom: 0.35rem;
+}
+
+.project-details h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  margin: 0 0 0.5rem;
+  line-height: 1.2;
+}
+
+.project-details p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.55;
+  margin-bottom: 0.75rem;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.75rem 0;
+}
+
+.tech-tag {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 9px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.project-accomplishments {
+  margin: 0.5rem 0 0.75rem;
+  padding-left: 1.1rem;
+
+  li {
+    font-size: 0.88rem;
+    color: #444;
+    margin-bottom: 0.2rem;
+    line-height: 1.5;
+  }
+}
+
+.project-link {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0a0a0a;
+  text-decoration: none;
+  border-bottom: 1px solid #0a0a0a;
+  padding-bottom: 1px;
+  transition: opacity 0.15s ease;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+// === SKILLS ===
+.skills-list {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 2;
+}
+
+// === FOOTER ===
+.site-footer {
+  border-top: 1px solid #ebebeb;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+.footer-heading {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+// === ABOUT PAGE ===
+.post-content {
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    margin-top: 2.5rem;
+  }
+
+  p,
+  li {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.7;
+  }
+}
+
+// === PROJECT DETAIL PAGE ===
+.project-page {
+  max-width: 760px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 13px;
+  font-weight: 500;
+  color: #888;
+  text-decoration: none;
+
+  &:hover {
+    color: #0a0a0a;
+  }
+}
+
+.project-page h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: -0.035em;
+  margin: 0.3rem 0 0.75rem;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
+
+.project-meta {
+  margin-bottom: 1.5rem;
+}
+
+.github-link {
+  display: inline-block;
+  margin-bottom: 2.5rem;
+  padding: 0.5rem 1.1rem;
+  background: #0a0a0a;
+  color: #fff !important;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 0.15s ease;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+
+  figure {
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ebebeb;
+    display: block;
+  }
+
+  figcaption {
+    font-size: 11px;
+    color: #999;
+    margin-top: 0.4rem;
+    text-align: center;
+  }
+}
+
+// === RESPONSIVE ===
+@media (max-width: 640px) {
+  .page-heading {
+    font-size: 2.25rem;
+    margin-top: 2rem;
+  }
+
+  .project-card {
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .project-screenshot {
+    flex: none;
+    width: 100%;
+    max-width: 260px;
+  }
+}

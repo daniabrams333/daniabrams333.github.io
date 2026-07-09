@@ -1,0 +1,70 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  <hr>
+
+  <h2>Featured Projects</h2>
+
+  {%- for project in site.data.projects -%}
+  <div class="project-card">
+
+    <div class="project-screenshot">
+      {%- if project.screenshot -%}
+        <img src="{{ '/assets/images/' | append: project.screenshot | relative_url }}"
+             alt="{{ project.title }} screenshot">
+      {%- else -%}
+        <div class="screenshot-placeholder">No screenshot</div>
+      {%- endif -%}
+    </div>
+
+    <div class="project-details">
+      <span class="project-category">{{ project.category }}</span>
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.description }}</p>
+
+      <div class="project-tech">
+        {%- for tag in project.tech -%}
+          <span class="tech-tag">{{ tag }}</span>
+        {%- endfor -%}
+      </div>
+
+      {%- if project.accomplishments -%}
+      <ul class="project-accomplishments">
+        {%- for item in project.accomplishments -%}
+          <li>{{ item }}</li>
+        {%- endfor -%}
+      </ul>
+      {%- endif -%}
+
+      {%- if project.link -%}
+        {%- if project.link contains 'http' -%}
+          <a href="{{ project.link }}" target="_blank" rel="noopener" class="project-link">View on App Store &rarr;</a>
+        {%- else -%}
+          <a href="{{ project.link | relative_url }}" class="project-link">View Project &rarr;</a>
+        {%- endif -%}
+      {%- endif -%}
+    </div>
+
+  </div>
+  {%- endfor -%}
+
+  <hr>
+
+  <h2>Skills</h2>
+  <p class="skills-list">Swift &middot; SwiftUI &middot; UIKit &middot; Xcode &middot; C++ &middot; Java &middot; Git &middot; Figma</p>
+
+  <hr>
+
+  <h2>Get In Touch</h2>
+  <p>Open to freelance and full-time opportunities. <a href="mailto:daniabrams333@gmail.com">daniabrams333@gmail.com</a></p>
+
+</div>
